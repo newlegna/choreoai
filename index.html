@@ -540,12 +540,10 @@
             // Google Form URL
             const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdMubVPI1Ltg64Cj5pgJ53lWkOs1rwAmqhuiP6GncxjJIA9jQ/formResponse';
             
-            // Create form data
-            // IMPORTANT: Replace 'entry.1234567890' with your actual Google Form entry IDs
-            // See instructions below on how to find these
+            // Create form data for Google Forms
             const formData = new URLSearchParams();
-            formData.append('entry.XXXXXXXXXX', name);  // Replace XXXXXXXXXX with Name field entry ID
-            formData.append('entry.YYYYYYYYYY', email); // Replace YYYYYYYYYY with Email field entry ID
+            formData.append('entry.305424601', name);   // Name field
+            formData.append('entry.155072798', email);  // Email field
             
             // Submit to Google Forms
             fetch(googleFormUrl, {
